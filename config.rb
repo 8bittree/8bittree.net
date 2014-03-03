@@ -38,6 +38,11 @@
 # Reload the browser automatically whenever files change
 activate :livereload
 
+# Setup blog
+activate :blog do |blog|
+	# set options on blog
+end
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
