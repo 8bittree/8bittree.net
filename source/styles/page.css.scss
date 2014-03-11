@@ -1,21 +1,17 @@
+@import 'bourbon/bourbon';
 @import 'colors';
 @import 'mixins';
 
 article {
-	border-radius: 24px;
-	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.25) inset;
-	padding: 15px;
+	background-color: $color8;
 }
 
 h1 {
 	text-align: center;
 }
 
-header {
-	padding: 0%;
-}
-
 nav {
+	background: $color8;
 	width: 100%;
 
 	a {
@@ -27,8 +23,12 @@ nav {
 		padding: 5px;
 	}
 
-	#title-link {
+	#home-link {
 		color: $color2;
+	}
+
+	.splitter {
+		display: none;
 	}
 }
 
@@ -39,10 +39,33 @@ nav {
 	width: 90%;
 }
 
+.paginator {
+	display: flex;
+	margin-top: 2px;
+	width: 100%;
+
+	span {
+		flex: 1;
+		text-align: center;
+	}
+}
+
+.post-date {
+	text-align: center;
+}
+
+.splitter {
+	@include linear-gradient(to right, $color8, $color0, $color8);
+	border: none;
+	display: block;
+	margin: 0px;
+	padding: 1px;
+}
+
 @media (max-width: 500px) {
 	nav {
-		a, #title-link {
-			border-top: 2px solid $color0;
+		a, #home-link {
+			background-color: $color8;
 			display: block;
 			margin: 0;
 			padding: 10px 0px 10px 0px;
@@ -50,8 +73,8 @@ nav {
 			width: 100%;
 		}
 
-		#title-link {
-			border-top: none;
+		.splitter {
+			display: block;
 		}
 	}
 }

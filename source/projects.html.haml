@@ -1,0 +1,12 @@
+---
+layout: base
+---
+
+- projects = blog.articles.group_by {|a| a.metadata[:page]['project'] }
+%h1<
+  Projects
+%ul
+  - projects.each do |project, articles|
+    - if !project.blank?
+      %li
+        = link_to project, project_path(project)

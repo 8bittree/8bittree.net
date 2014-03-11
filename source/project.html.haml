@@ -1,0 +1,15 @@
+---
+layout: project
+---
+
+%h1
+  = project
+- if File.exists?("source/projects/_#{project}.haml")
+  = partial "projects/#{project}"
+- projects = blog.articles.group_by {|a| a.metadata[:page]['project'] }
+%ul
+  - projects.each do |p, articles|
+    - if p == project
+      - articles.each do |article|
+        %li
+          = link_to article.title, article

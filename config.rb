@@ -40,8 +40,19 @@ activate :livereload
 
 # Setup blog
 activate :blog do |blog|
-	# set options on blog
+	blog.custom_collections = {
+		project: {
+			link: '/projects/{project}.html',
+			template: '/project.html'
+		}
+	}
+	blog.paginate = true
+	blog.permalink = "/posts/{year}/{month}/{title}.html"
+	blog.sources = "/posts/{year}/{month}-{day}-{title}.html"
 end
+
+# Create pretty urls
+activate :directory_indexes
 
 # Methods defined in the helpers block are available in templates
 # helpers do

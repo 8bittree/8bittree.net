@@ -1,0 +1,22 @@
+---
+layout: base
+pageable: True
+per_page: 10
+---
+.content
+  - page_articles.each do |article|
+    %article
+      %h1= link_to article.title, article
+      .post-date= article.date.strftime('%B %e, %Y')
+      = article.body
+    %hr.splitter
+.paginator
+  %span
+    - if prev_page
+      = link_to 'Newer posts', prev_page
+  %span
+    - if num_pages > 1
+      Page #{page_number} of #{num_pages}
+  %span
+    - if next_page
+      = link_to 'Older posts', next_page

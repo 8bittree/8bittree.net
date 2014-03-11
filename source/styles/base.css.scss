@@ -1,3 +1,4 @@
+@import 'bourbon/bourbon';
 @import 'colors';
 @import 'mixins';
 
@@ -6,7 +7,8 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+a:hover, #home-link:hover {
+	color: $color6;
 	text-decoration: underline;
 }
 
@@ -16,10 +18,16 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
 	color: $color2;
+	font-family: 'Della Respira', 'Cochin', serif;
+	margin: 4px;
+
+	a {
+		color: $color2;
+	}
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Della Respira', serif;
+.post-date {
+	color: $color5;
 }
