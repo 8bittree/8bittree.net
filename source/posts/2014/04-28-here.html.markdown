@@ -1,0 +1,56 @@
+---
+title: Here
+date: 2014-04-28 23:32 UTC
+tags: blog, middleman, projects, website
+layout: article
+project: 8bittree.net
+---
+
+So here I am, setting up a personal website. I had WordPress.com blog a few
+years ago. I guess I technically still have it, but I haven't done anything
+with it, nor do I intend to return to it.
+
+Anyway, with this site, I'm planning on posting about things that cross my mind
+that I feel warrant a post, as well as, and probably more importantly,
+documenting various projects of mine. This website itself is the [first] of
+those projects.
+
+[first]: /projects/8bittree-net
+
+I decided to go with a static site generator to build 8bittree.net. After
+looking at few options, including [Jekyll], [Hyde], [Acrylamid], [nanoc] and
+[Hakyll], I ended up going with [Middleman]. Incidentally, I think Middleman was
+the first one I stumbled on, though at the time, I hadn't decided what kind of
+software I was going to use to build my site, or even what a static site
+generator was. My decision was mostly driven by Middleman having a mostly bare
+bones base setup with lots of customizability and some decent documentation, as
+well as me being able to get it working at all in a fairly short period of time.
+I actually do think the documentation could use some fattening, but there
+fortunately is something of a community around it that can help answer your
+questions if the documentation doesn't.
+
+[Jekyll]: http://jekyllrb.com/
+[Hyde]: https://hyde.github.io/
+[Acrylamid]: http://posativ.org/acrylamid/
+[nanoc]: http://nanoc.ws/
+[Hakyll]: http://jaspervdj.be/hakyll/
+[Middleman]: http://middlemanapp.com/
+
+In case you're wondering what a static site generator is, it's simply a tool
+that creates html files based on provided templates and places them in
+appropriate directories within a root folder. Then you just need to point your
+webserver at the root server and you should be ready to go. Since it spits out
+completed html files, there's no need for a database or dynamic page server.
+Being able to use template files with languages such as Haml and Markdown makes
+writing the site a lot easier than doing all the html by hand, especially if
+you've got things that need to be included in multiple pages.
+
+I still need to do a fair amount of work here. I'd like to set up a comment
+system, on the off chance anybody reads something here and decides they'd like
+to say something. Setting up relative to now post dates would be a nice
+addition. And the page layouts will probably receive some more tweaking.
+
+This website is open source. You can check it out on [Bitbucket] or [Github].
+
+[Bitbucket]: https://bitbucket.org/8bittree/8bittree.net
+[Github]: https://github.com/8bittree/8bittree.net
