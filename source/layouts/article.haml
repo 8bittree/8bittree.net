@@ -1,0 +1,4 @@
+= wrap_layout :base do
+  %h1= current_page.data.title
+  .post-date= current_page.date.strftime('%Y %B %e')
+  = yield
