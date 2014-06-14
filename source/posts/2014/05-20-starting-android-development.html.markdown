@@ -14,18 +14,19 @@ probably most notably in creating an App.net... um... app. (Seriously, why did
 they name a social network App.net?)
 
 But that's not what the app that this post is about. Instead, I'm going to get
-my feet wet with a to do list of questionable utility.
+my feet wet with a to do list app of questionable utility.
 
-The general idea is to give the app a list of things to do, then whenever you're
-bored, you'd open the app, press a button, and it would give you a random task
-to do. Whether or not you actually obey the almighty to do list app is up to
-you. It won't care. It's to busy planning out what task to give you next time.
+The general idea is to give the app a list of things to do, then whenever
+you're bored, you'd open the app, press a button, and it would give you a
+random task to do. Whether or not you actually obey the almighty to do list app
+is up to you. It won't care. It'll be too busy planning out what task to give
+you next time.
 
 I'm naming it [Randoo] for now, as a quick search doesn't turn up anything on
 Google Play with the same name, at least at this point in time. If some better
 name comes along, I might change it, though.
 
-[Randoo]: /projects/Randoo
+[Randoo]: /projects/randoo
 
 As far as apps go, it should be pretty trivial. It needs at minimum:
 
@@ -43,8 +44,8 @@ added in later versions:
   include a "Do not select until" option
 - Contexts. For example, if you felt like drawing something, but aren't sure
   what to draw, this feature would allow to avoid getting tasks like "Learn
-  Spanish." Unless, of course, you actually put that in as something you want to
-  draw.
+  Spanish." Unless, of course, you actually put that in as something you want
+  to draw.
 - Synchronization across multiple devices. This probably won't happen unless I
   can manage to do it without having to buy a server or something similar.
 
